@@ -14,6 +14,7 @@
     font-family: "HEX Franklin v0.2";
     src: url(fonts/63c8e35a64b86c4ae33a3143_HEX_Franklin_v0.2_Extra_Condensed-light.ttf);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -209,7 +210,7 @@ h1 span {
 
 #container p {
     font-size: 2.2vw;
-    font-family: "Public sans";
+    font-family: "Plain Light";
     font-weight: 500;
     line-height: 3.4vw;
 }
