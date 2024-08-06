@@ -1,0 +1,1774 @@
+@font-face {
+    font-family: "Plain Light";
+    src: url(fonts/plain-light-webfont.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Plain Light";
+    /* cursor: none; */
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #050505;
+}
+
+*::-moz-selection {
+    background-color: #EB6D1B;
+    color: rgb(245, 245, 245);
+}
+
+*::selection {
+    background-color: #EB6D1B;
+    color: rgb(245, 245, 245);
+}
+
+#crsr {
+    width: 0.7vw;
+    height: 0.7vw;
+    border-radius: 50%;
+    background-color: white;
+    position: fixed;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+#main {
+    position: relative;
+    background-color: #050505;
+    /* overflow: hidden; */
+
+}
+
+#page1 {
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: #151515; */
+    position: relative;
+
+}
+
+#page1 #navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 1.5vw 2.5vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-color: #050505;
+}
+
+#navbar #nav-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 4vh;
+    width: 5vw;
+
+}
+
+#nav-1 .svg2 {
+    height: 4vh;
+    width: 2vw;
+}
+
+#navbar #nav-2 {
+    position: relative;
+    width: 12vw;
+    height: 4vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    cursor: pointer;
+}
+
+#nav-2 h6 {
+    font-size: 1vw;
+    font-weight: 550;
+}
+
+#nav-2 i {
+    font-size: 1.5vw;
+}
+
+#nav-2 svg {
+    font-size: 2vw;
+    font-weight: 100;
+}
+
+#heading {
+    padding: 1.5vw 2.5vw;
+    position: relative;
+}
+
+#heading h1 {
+    font-size: 6vw;
+    font-family: "HEX Franklin v0.2";
+    line-height: 6vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /* justify-content: center; */
+}
+
+h1 span {
+    font-size: 6vw;
+    font-family: "HEX Franklin v0.2";
+    line-height: 6vw;
+    color: #EB6D1B;
+    font-weight: 200;
+    margin-left: 0.8vw;
+}
+
+#heading h1 .circle {
+    height: 5vw;
+    width: 5vw;
+    background-color: #EB6D1B;
+    border-radius: 50%;
+    margin-left: 0.8vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.circle svg {
+    font-size: 3vw;
+}
+
+#pixeto_guy {
+    min-height: 100vh;
+    width: 100vw;
+    padding: 1.5vw 2.5vw;
+
+}
+
+#pixeto_guy #vid {
+    height: 53vw;
+    width: 95vw;
+    overflow: hidden;
+}
+
+#vid video {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+#container {
+    width: 100vw;
+    padding: 1.5vw 2.5vw;
+
+}
+
+#container p {
+    font-size: 2.2vw;
+    font-family: "Public sans";
+    font-weight: 500;
+    line-height: 3.4vw;
+}
+
+#container #button {
+    /* border: none; */
+    width: 9vw;
+    height: 3vw;
+    background-color: #EB6D1B;
+    border-radius: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 2vw;
+}
+
+#button h5 {
+    font-weight: 400;
+    font-size: 1vw;
+    font-family: "Public sans";
+    margin-left: 1vw;
+}
+
+#button svg {
+    font-size: 1.2vw;
+    rotate: 230deg;
+    margin-left: 0.7vw;
+    font-weight: 700;
+}
+
+#logo-slide {
+    height: 10vw;
+    width: 100vw;
+    padding: 1.5vw 2.5vw;
+    overflow-x: hidden;
+    white-space: nowrap;
+    position: relative;
+    /* Ensure proper positioning for child elements */
+}
+
+#logo-slide svg {
+    -webkit-text-stroke: 1px white;
+    -moz-text-stroke: 1px white;
+    /* Add support for Firefox */
+    -ms-text-stroke: 1px white;
+    /* Add support for Internet Explorer */
+    margin-right: 16px;
+    display: inline-block;
+    -webkit-animation: anime 5s linear infinite;
+    animation: anime 5s linear infinite;
+}
+
+@-webkit-keyframes anime {
+    from {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes anime {
+    from {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+
+    to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+#page2 {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+#page2 .line {
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    height: 0.02vw;
+}
+
+#page2 #top-heading {
+    padding: 1.5vw 2.5vw;
+    margin-top: 1vw;
+    position: relative;
+}
+
+#top-heading h2 {
+    font-size: 2.5vw;
+    font-family: "HEX Franklin v0.2";
+}
+
+#page2 #cards {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #050505;
+    padding: 3vw 2.5vw;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+}
+
+/* Common styles for all cards */
+.card {
+    min-height: 40vw;
+    width: 30vw;
+    position: relative;
+    overflow: hidden;
+    margin-left: 2vw;
+    margin-top: 10vw;
+}
+
+.card-titel {
+    width: 30vw;
+    height: 2vw;
+    font-size: 1.3vw;
+    font-weight: 700;
+    margin-bottom: 0.5vw;
+}
+
+.card-titel span {
+    font-size: 0.7vw;
+    font-weight: 700;
+    color: #EB6D1B;
+}
+
+.img-div {
+    width: 30vw;
+    height: 40vw;
+    position: relative;
+}
+
+.img-div img {
+    width: 30vw;
+    height: 40vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+.underline {
+    width: 30vw;
+    height: 0.02vw;
+    margin-top: 0.5vw;
+    background-color: #EB6D1B;
+}
+
+.bottom-txt {
+    min-height: 0.1vw;
+    width: 30vw;
+    margin-top: 0.2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.bottom-txt h6 {
+    font-weight: 100;
+    font-size: 0.5vw;
+}
+
+/* Specific margins for each card */
+#card1 {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+#card2 {
+    margin-top: 33vw;
+}
+
+#card3 {
+    margin-top: 20vw;
+    margin-right: 2vw;
+}
+
+#card4 {
+    margin-top: 10vw;
+    margin-left: 0;
+}
+
+#card5 {
+    margin-top: 45vw;
+}
+
+#card6 {
+    margin-top: 25vw;
+    margin-right: 2vw;
+
+}
+
+#card7 {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+#card8 {
+    margin-top: 50vw;
+}
+
+
+.bottom-txt h6 {
+    font-weight: 100;
+    font-size: 0.5vw;
+}
+
+#page3 {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+}
+
+#page3 #row-div {
+    width: 100vw;
+    height: 55vw;
+    padding: 1.5vw 2.5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#row-div .head {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: 2.2vw;
+    font-family: "HEX Franklin v0.2";
+    font-weight: 300;
+}
+
+#row-div .row-txt {
+    width: 70vw;
+    height: 20vw;
+    margin-left: 15vw;
+}
+
+.acc-content {
+    height: 6vw;
+    width: 70vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    position: relative;
+    -webkit-transition: opacity 0.3s ease, -webkit-filter 0.3s ease;
+    transition: opacity 0.3s ease, -webkit-filter 0.3s ease;
+    -o-transition: opacity 0.3s ease, filter 0.3s ease;
+    transition: opacity 0.3s ease, filter 0.3s ease;
+    transition: opacity 0.3s ease, filter 0.3s ease, -webkit-filter 0.3s ease;
+    opacity: 0.5;
+}
+
+.acc-content h6 {
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: rgb(243, 243, 243);
+    margin-left: 2vw;
+    position: relative;
+}
+
+.acc-content:hover {
+    opacity: 1;
+    -webkit-filter: none;
+            filter: none;
+}
+
+.acc-line {
+    width: 70vw;
+    height: 0.1vw;
+    /* Increase height for better visibility */
+    background-color: white;
+    position: relative;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+.acc-content:hover+.acc-line {
+    background-color: #EB6D1B;
+}
+
+#page4 {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+}
+
+#page4 .line2 {
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    height: 0.02vw;
+    /* Consider using a more responsive unit like px */
+}
+
+#page4 .top-heading1 {
+    padding: 1.5vw 2.5vw;
+    margin-top: 1vw;
+    position: relative;
+}
+
+.top-heading1 h2 {
+    font-size: 2.5vw;
+    font-family: "HEX Franklin v0.2", sans-serif;
+    /* Fallback font */
+}
+
+#container1 {
+    min-height: 40vw;
+    width: 100vw;
+    padding: 4vw 2.5vw;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    /* Allow items to wrap for smaller screens */
+}
+
+#container1 .review-slide {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 65vw;
+            flex: 1 1 65vw;
+    /* Flexible width for responsiveness */
+    height: auto;
+    /* Adjust height for content */
+    max-width: 65vw;
+    /* Ensure it doesn't exceed available space */
+}
+
+.review-slide .review_header {
+    width: 100%;
+    /* Use full width of parent */
+    height: 3vw;
+    /* overflow: hidden; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.review_header img {
+    height: 2.5vw;
+    width: auto;
+    /* Maintain aspect ratio */
+    border-radius: 50%;
+}
+
+.review_header h6 {
+    margin-left: 1vw;
+}
+
+.review-slide video {
+    width: 100%;
+    /* Use full width of parent */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+#container1 #comment-slide {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 25vw;
+            flex: 1 1 25vw;
+    /* Flexible width for responsiveness */
+    height: auto;
+    /* Adjust height for content */
+    margin-left: 3vw;
+    max-width: 25vw;
+    /* Ensure it doesn't exceed available space */
+}
+
+#comment-slide .cmt {
+    height: auto;
+    /* Adjust height based on content */
+    width: 100%;
+    /* Use full width of parent */
+    background-color: #ffffff24;
+    margin-left: 0;
+    /* Adjust for better layout */
+    margin-top: 1.5vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-radius: 30px;
+    padding: 1vw;
+    /* Add padding for better content fit */
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    /* Include padding in width calculation */
+}
+
+.cmt .cmt-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0.5vw 1vw;
+}
+
+.cmt-top img {
+    height: 2.5vw;
+    width: auto;
+    /* Maintain aspect ratio */
+    border-radius: 50%;
+}
+
+.cmt-top h6 {
+    margin-left: 1vw;
+}
+
+.cmt h5 {
+    font-size: 0.6vw;
+    font-weight: 400;
+    padding: 0.5vw 1vw;
+}
+
+#page5 {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+}
+
+#page5 #row-div2 {
+    width: 100vw;
+    height: 55vw;
+    padding: 1.5vw 2.5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+}
+
+#row-div2 .head2 {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: 2.2vw;
+    font-family: "HEX Franklin v0.2";
+    font-weight: 300;
+
+}
+
+#row-div2 .row-txt2 {
+    width: 70vw;
+    height: 20vw;
+    margin-left: 15vw;
+    position: relative;
+}
+
+.acc-content2 {
+    height: 7vw;
+    width: 70vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    cursor: pointer;
+    position: relative;
+    -webkit-transition: opacity 0.3s ease;
+    -o-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+    /* Default opacity */
+}
+
+.acc-content2 h6 {
+    font-size: 1.5vw;
+    font-weight: 500;
+    color: rgb(243, 243, 243);
+    margin-left: 2vw;
+}
+
+.acc-line2 {
+    width: 65vw;
+    height: 0.02vw;
+    background-color: #ffffff;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+.acc-content2:hover {
+    opacity: 1;
+    -webkit-filter: none;
+            filter: none;
+    /* filter: none; Remove blur on hover */
+}
+
+.acc-content2:not(:hover) {
+    opacity: 0.5;
+    -webkit-filter: opacity(2px);
+            filter: opacity(2px);
+    /* Apply blur effect to non-hovered elements */
+}
+
+.acc-content2:hover+.acc-line2 {
+    background-color: #EB6D1B;
+}
+
+
+
+#page6 {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+}
+
+#page6 .line {
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    height: 0.02vw;
+}
+
+#page6 #top-heading {
+    padding: 1.5vw 2.5vw;
+    margin-top: 1vw;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
+}
+
+#top-heading h2 {
+    font-size: 2.5vw;
+    font-family: "HEX Franklin v0.2", sans-serif;
+    /* Fallback font */
+}
+
+#top-heading button {
+    height: 3.2vw;
+    width: 10vw;
+    background-color: #EB6D1B;
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+#top-heading button svg {
+    -webkit-transform: rotate(40deg);
+        -ms-transform: rotate(40deg);
+            transform: rotate(40deg);
+    /* Use transform for rotation */
+    margin-left: 1vw;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+#top-heading button:hover {
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+    /* Adjust the scale factor as needed */
+}
+
+#page6 #photos-div {
+    height: 60vw;
+    width: 100vw;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
+}
+
+#photos-div .pht {
+    width: 30vw;
+    height: 45vw;
+    position: relative;
+    overflow: hidden;
+    margin: 1vw;
+    /* Add some margin for spacing */
+}
+
+.pht img {
+    height: 87%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-transition: -webkit-filter 0.3s ease;
+    transition: -webkit-filter 0.3s ease;
+    -o-transition: filter 0.3s ease;
+    transition: filter 0.3s ease;
+    transition: filter 0.3s ease, -webkit-filter 0.3s ease;
+    -webkit-filter: none;
+            filter: none;
+}
+
+/* When hovering over a .pht element, blur the other images */
+#photos-div:hover .pht:not(:hover) img {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    /* Apply blur to non-hovered images */
+}
+
+.pht .lines {
+    height: 0.01vw;
+    width: 100%;
+    /* Ensure it matches the width of .pht */
+    background-color: rgb(180, 180, 180);
+    margin-top: 0.5vw;
+}
+
+.pht h5 {
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    margin-top: 0.3vw;
+    font-weight: 450;
+}
+
+#footer {
+    min-height: 10vw;
+    width: 100vw;
+}
+
+#footer #ft {
+    height: 9vw;
+    width: 80vw;
+    padding: 1.5vw 2.5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    /* Corrected alignment */
+}
+
+#ft .box {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+#ft .box h5 {
+    font-size: 0.9vw;
+    font-weight: 600;
+    line-height: 1.7;
+    position: relative;
+    cursor: pointer;
+    color: rgb(229, 229, 229);
+}
+
+#ft .box h6 {
+    margin-bottom: 0.6vw;
+    font-size: 0.8vw;
+    font-weight: 400;
+    color: rgb(130, 130, 130);
+}
+
+.box:nth-child(n+2) {
+    margin-left: 8vw;
+}
+
+.box #social-wrap {
+    width: 100%;
+    height: 2vw;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#social-wrap button {
+    height: 2vw;
+    width: 2vw;
+    border-radius: 50%;
+    border: 1px solid rgb(104, 104, 104);
+    background-color: transparent;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-transition: background-color 0.3s, fill 0.3s;
+    -o-transition: background-color 0.3s, fill 0.3s;
+    transition: background-color 0.3s, fill 0.3s;
+    /* Use 'fill' for SVG */
+}
+
+#social-wrap button:hover {
+    background-color: rgb(59, 59, 59);
+}
+
+#social-wrap button:nth-child(n+2) {
+    margin-left: 0.5vw;
+}
+
+#social-wrap button svg {
+    width: 1.1vw;
+    height: 1.1vw;
+    display: inline;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+#footer #unline {
+    height: 0.01vw;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+}
+
+#footer .last {
+    padding: 1.5vw 2.5vw;
+    height: 2vw;
+    width: 32vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+._canvas_container {
+    z-index: 999999 !important;
+    pointer-events: none;
+}
+
+
+
+@media (max-width:600px) {
+    #page1 {
+        min-height: -webkit-fit-content;
+        min-height: -moz-fit-content;
+        min-height: fit-content;
+        position: relative;
+    }
+
+    #page1 #navbar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 1.5vw 2.5vw;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        background-color: #050505;
+    }
+
+    #navbar #nav-1 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        height: 4vh;
+        width: 18vw;
+
+    }
+
+    #nav-1 .svg2 {
+        height: 4vh;
+        width: 7vw;
+    }
+
+    #navbar #nav-2 {
+        position: relative;
+        width: 35vw;
+        height: 4vh;
+    }
+
+    #nav-2 h6 {
+        font-size: 3vw;
+        font-weight: 550;
+    }
+
+    #nav-2 i {
+        font-size: 1.5vw;
+    }
+
+    #nav-2 svg {
+        font-size: 5vw;
+        font-weight: 100;
+    }
+
+    #heading {
+        padding: 1.5vw 2.5vw;
+        position: relative;
+        margin-top: 10vw;
+    }
+
+    #heading h1 {
+        font-size: 10vw;
+        font-family: "HEX Franklin v0.2";
+        line-height: 10vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        /* justify-content: center; */
+    }
+
+    h1 span {
+        font-size: 10vw;
+        font-family: "HEX Franklin v0.2";
+        line-height: 6vw;
+        color: #EB6D1B;
+        font-weight: 200;
+        margin-left: 0.8vw;
+    }
+
+    #heading h1 .circle {
+        height: 5vw;
+        width: 5vw;
+        background-color: #EB6D1B;
+        border-radius: 50%;
+        margin-left: 0.8vw;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    .circle svg {
+        font-size: 3vw;
+    }
+
+    #pixeto_guy {
+        min-height: 20vh;
+        width: 100vw;
+        padding: 1.5vw 2.5vw;
+
+    }
+
+    #pixeto_guy #vid {
+        height: 53vw;
+        width: 94vw;
+        overflow: hidden;
+    }
+
+    #vid video {
+        height: 100%;
+        width: 100%;
+        -o-object-fit: cover;
+           object-fit: cover;
+    }
+
+    #container {
+        width: 100vw;
+        padding: 1.5vw 2.5vw;
+        margin-top: 3vw;
+
+    }
+
+    #container p {
+        font-size: 8vw;
+        font-family: "Public sans";
+        font-weight: 500;
+        line-height: 10vw;
+    }
+
+    #container #button {
+        /* border: none; */
+        width: 20vw;
+        height: 6vw;
+        background-color: #EB6D1B;
+        border-radius: 50px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-top: 2vw;
+    }
+
+    #button h5 {
+        font-weight: 400;
+        font-size: 3vw;
+        font-family: "Public sans";
+        margin-left: 1vw;
+    }
+
+    #logo-slide {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        padding: 1.5vw 2.5vw;
+        overflow-x: hidden;
+        white-space: nowrap;
+        position: relative;
+        /* Ensure proper positioning for child elements */
+    }
+
+    #logo-slide svg {
+        margin-right: 16px;
+        display: inline-block;
+        -webkit-animation: anime 5s linear infinite;
+                animation: anime 5s linear infinite;
+    }
+
+    #top-heading h2 {
+        font-size: 8vw;
+        font-weight: 200;
+    }
+
+    #cards {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        padding: 2vw 1.5vw;
+    }
+
+    #cards .card {
+        width: 100%;
+        min-height: 60vw;
+    }
+
+    .card-titel {
+        font-size: 3.3vw;
+        height: auto;
+        margin-bottom: 1vw;
+        font-weight: 200;
+    }
+
+    .card-titel span {
+        font-size: 1.5vw;
+    }
+
+    .img-div {
+        height: 60vw;
+    }
+
+    .bottom-txt h6 {
+        font-size: 1.5vw;
+    }
+
+    #page2 #cards {
+        padding: 5vw 5vw;
+    }
+
+    .card {
+        min-height: 70vw;
+        width: 90vw;
+        margin-left: 0;
+        margin-top: 5vw;
+    }
+
+    .card-title {
+        width: 90vw;
+        height: auto;
+        font-size: 4vw;
+        margin-bottom: 2vw;
+    }
+
+    .card-title span {
+        font-size: 3vw;
+    }
+
+    .img-div {
+        width: 90vw;
+        height: 70vw;
+    }
+
+    .img-div img {
+        width: 90vw;
+        height: 125vw;
+    }
+
+    .underline {
+        width: 90vw;
+        margin-top: 2vw;
+    }
+
+    .bottom-txt {
+        width: 90vw;
+        height: 1vw;
+        margin-top: 2vw;
+    }
+
+    .bottom-txt h6 {
+        font-size: 2vw;
+    }
+
+    /* Specific margins for each card in mobile view */
+    #card2 {
+        margin-top: 10vw;
+        margin-left: 0;
+    }
+
+    #card3 {
+        margin-top: 10vw;
+        margin-left: 0;
+    }
+
+    #card4 {
+        margin-top: 10vw;
+        margin-left: 0;
+    }
+
+    #card5 {
+        margin-top: 10vw;
+        margin-left: 0;
+    }
+
+    #card6 {
+        margin-top: 10vw;
+        margin-left: 0;
+    }
+
+    #card7 {
+        margin-top: 10vw;
+        margin-left: 0;
+    }
+
+    #card8 {
+        margin-top: 10vw;
+        margin-left: 0;
+    }
+
+    #row-div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        /* Align children to the left */
+    }
+
+    #row-div .row-txt {
+        width: 100%;
+        /* Take full width */
+        height: auto;
+        /* Adjust height as needed */
+        margin-left: 0;
+        /* Remove left margin */
+        margin-top: 1vw;
+        /* Add some space between the head and row-txt */
+    }
+
+    #page3 {
+        position: relative;
+    }
+
+    #row-div .head {
+        font-size: 8vw;
+        font-weight: 200;
+        margin-top: 25vw;
+        margin-bottom: 3vw;
+    }
+
+    .acc-content {
+        height: 20vw;
+        width: 70vw;
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        position: relative;
+    }
+
+    .acc-content h6 {
+        font-size: 4.5vw;
+        margin-left: 2vw;
+        color: white;
+    }
+
+    .acc-line {
+        width: 95vw;
+        height: 0.1vw;
+        /* Increase height for better visibility */
+        background-color: white;
+        position: relative;
+    }
+
+    .top-heading1 h2 {
+        font-size: 8vw;
+        /* Larger font for smaller screens */
+        font-weight: 200;
+        margin-top: 10vw;
+    }
+
+    #page4 {
+        width: 100vw;
+        min-height: 70vh;
+        position: relative;
+    }
+
+    #container1 {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        /* Stack items vertically */
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        /* Center items */
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+
+    #container1 .review-slide,
+    #container1 #comment-slide {
+        max-width: 100vw;
+        /* Use more of the screen width */
+        margin-left: 0;
+        /*Remove left margin8 */
+        margin-right: 5vw;
+    }
+
+    .review_header {
+        margin-bottom: 5vw;
+        height: 5vw;
+
+    }
+
+    .review_header h6 {
+        font-size: 5vw;
+    }
+
+    .review_header img,
+    .cmt-top img {
+        height: 5vw;
+        /* Larger image for visibility */
+    }
+
+    .cmt h5 {
+        font-size: 1.2vw;
+        /* Larger text for readability */
+    }
+
+    #page5 {
+        width: 100vw;
+        min-height: 85vh;
+        position: relative;
+    }
+
+    #row-div2 {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        /* Align children to the left */
+    }
+
+    #row-div2 .head2 {
+        font-size: 8vw;
+        font-weight: 200;
+        /* margin-top: 25vw; */
+        margin-bottom: 3vw;
+    }
+
+    #row-div2 .row-txt2 {
+        width: 100%;
+        /* Take full width */
+        margin-left: 0;
+        /* Remove left margin */
+        margin-top: 1vw;
+        /* Add some space between head2 and row-txt2 */
+    }
+
+    .acc-content2 {
+        width: 90vw;
+        /* Adjust width for smaller screens */
+        height: 20vw;
+        /* Adjust height for content */
+        -webkit-user-select: none;
+           -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+        position: relative;
+    }
+
+    .acc-content2 h6 {
+        font-size: 4.5vw;
+        /* Adjust font size for smaller screens */
+        margin-left: 2vw;
+    }
+
+    .acc-line2 {
+        width: 95vw;
+        height: 0.02vw;
+    }
+
+    #top-heading h2 {
+        font-size: 7vw;
+        /* Adjust font size for smaller screens */
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+
+    #top-heading button {
+        height: 6vw;
+        width: 20vw;
+        font-size: 2.5vw;
+        /* Adjust font size for smaller screens */
+    }
+
+    #top-heading button svg {
+        font-size: 2.5vw;
+        /* Adjust font size for smaller screens */
+    }
+
+    #page6 #photos-div {
+        height: auto;
+        /* Adjust height to fit content */
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        /* Stack elements vertically */
+    }
+
+    #photos-div .pht {
+        width: 90vw;
+        /* Full width for smaller screens */
+        height: auto;
+        margin: 2vw 0;
+        /* Adjust margin for spacing */
+    }
+
+    .pht img {
+        height: auto;
+        width: 100%;
+    }
+
+    .pht h5 {
+        font-size: 3vw;
+        /* Adjust font size for smaller screens */
+    }
+
+    .pht .lines {
+        height: 0.1vw;
+        width: 100%;
+        background-color: rgb(180, 180, 180);
+        margin-top: 3vw;
+        margin-bottom: 1vw;
+    }
+
+
+    #footer #ft {
+        height: auto;
+        /* Allow height to adjust based on content */
+        padding: 3vw 4vw;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        /* Stack items vertically */
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        /* Align items to the start */
+    }
+
+    #ft .box {
+        margin-bottom: 2vw;
+        /* Add spacing between boxes */
+    }
+
+    .box:nth-child(n+2) {
+        margin-left: 0;
+        /* Remove left margin for smaller screens */
+    }
+
+    .box #social-wrap {
+        height: 10vw;
+        gap: 5vw;
+    }
+
+    #footer .last {
+        width: auto;
+        /* Allow width to adjust based on content */
+        padding: 3vw 4vw;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        /* Align items to the start */
+        height: 10vw;
+    }
+
+    #ft .box h6 {
+        margin-bottom: 2vw;
+        font-size: 3vw;
+        font-weight: 400;
+        margin-top: 10vw;
+        color: rgb(130, 130, 130);
+    }
+
+    #ft .box h5 {
+        font-size: 3.5vw;
+        font-weight: 600;
+        line-height: 1.7;
+        position: relative;
+        cursor: pointer;
+        color: rgb(229, 229, 229);
+    }
+
+    #social-wrap button svg {
+        width: 3.3vw;
+        height: 3.3vw;
+        display: inline;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    #social-wrap button {
+        height: 6vw;
+        width: 6vw;
+        border-radius: 50%;
+        border: 1px solid rgb(104, 104, 104);
+        background-color: transparent;
+    }
+
+    #footer #unline {
+        height: 0.1vw;
+        width: 100vw;
+        background-color: rgb(255, 255, 255);
+    }
+}
+@media (max-width: 1024px) {
+    /* Example adjustments for tablet screens */
+    #navbar #nav-1 {
+        width: 20vw;
+    }
+
+    #navbar #nav-2 {
+        width: 40vw;
+    }
+
+    #heading h1 {
+        font-size: 8vw;
+    }
+
+    /* Other adjustments */
+}
+/* Responsive styles for screens smaller than 768px */
+@media (max-width: 768px) {
+    #page1 {
+        min-height: -webkit-fit-content;
+        min-height: -moz-fit-content;
+        min-height: fit-content;
+    }
+
+    #navbar {
+        padding: 1.5vw 2.5vw;
+    }
+
+    #navbar #nav-1 {
+        width: 18vw;
+    }
+
+    #navbar #nav-2 {
+        width: 35vw;
+    }
+
+    #heading h1 {
+        font-size: 10vw;
+    }
+
+    #pixeto_guy #vid {
+        height: 53vw;
+    }
+
+    #container {
+        padding: 1.5vw 2.5vw;
+        margin-top: 3vw;
+    }
+
+    #container p {
+        font-size: 8vw;
+    }
+
+    #button {
+        width: 20vw;
+        height: 6vw;
+    }
+
+    #logo-slide svg {
+        -webkit-animation: anime 5s linear infinite;
+                animation: anime 5s linear infinite;
+    }
+
+    #cards {
+        padding: 2vw 1.5vw;
+    }
+
+    .card {
+        width: 100%;
+        min-height: 60vw;
+    }
+
+    .bottom-txt h6 {
+        font-size: 1.5vw;
+    }
+
+    #page2 #cards {
+        padding: 5vw 5vw;
+    }
+
+    .card {
+        min-height: 70vw;
+    }
+
+    .card-title {
+        font-size: 4vw;
+    }
+
+    .img-div {
+        width: 90vw;
+        height: 70vw;
+    }
+
+    .underline {
+        width: 90vw;
+    }
+
+    .bottom-txt {
+        width: 90vw;
+    }
+
+    #row-div {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    #row-div .row-txt {
+        margin-top: 1vw;
+    }
+
+    #page3 {
+        position: relative;
+    }
+
+    .acc-content {
+        height: 20vw;
+    }
+
+    .acc-line {
+        width: 95vw;
+        height: 0.1vw;
+    }
+
+    #footer #ft {
+        padding: 3vw 4vw;
+    }
+
+    .box #social-wrap {
+        height: 10vw;
+    }
+
+    #footer .last {
+        padding: 3vw 4vw;
+    }
+
+    #ft .box h6 {
+        font-size: 3vw;
+    }
+
+    #ft .box h5 {
+        font-size: 3.5vw;
+    }
+
+    #social-wrap button svg {
+        width: 3.3vw;
+        height: 3.3vw;
+    }
+
+    #footer #unline {
+        height: 0.1vw;
+    }
+}
